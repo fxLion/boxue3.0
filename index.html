@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>博学网上购书</title>
+	<link rel="stylesheet" type="text/css" href="styles/reset.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<script type="text/javascript" language="jscript" src="js/boxue.js" ></script>
+	<!-- 让IE6支持透明 -->
+	<!--[if IE 6]>
+	<script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+	<script type="text/javascript" src="js/ie6Fixpng.js"></script>
+	<![endif]-->
+</head>
+<body onload="getusername()" >
+	<div class="headerBar" >
+		<div class="top">
+			<div class="commonWidth">
+				<div class="left-area">
+					<a href="#" class="top-collection">收藏本网站</a>
+				</div><!-- left-area结束 -->
+				<div class="right-area">
+					欢迎来到博学书城！
+					<a href="login.html" id="login" >[登录]</a>
+					<a href="signIn.html" id="signin">[免费注册]</a>
+				</div><!-- right-area结束 -->
+			</div><!-- commonWidth结束 -->
+		</div><!-- top结束 -->
+		<div class="logo">
+			<div class="commonWidth">
+				<div class="logo-pic fl">
+					<a href="index.html"><img src="images/logo.png" alt="博学书城"></a>
+				</div><!-- logoPic结束 -->
+				<div class="logo-search fl">
+					<input type="text" class="logo-search-text fl" id="bookname" />
+					<input type="button" class="logo-search-button " value="搜 索" onclick="searchbook()" />
+				</div><!-- logo-search结束 -->
+				<div class="logo-shop fr">
+					<span class="logo-shop-text fl">购物车</span>
+					<span class="logo-shop-num fr">0</span>
+				</div><!-- logo-shop结束 -->
+			</div><!-- commonWidth结束 -->
+		</div><!-- logo结束 -->
+		<div class="nav">
+			<div class="commonWidth">
+				<div class="nav-class fl" >
+					<h3>全部商品分类<i></i></h3>
+					<div class="nav-class-show">
+						<dl class="nav-class-item">
+							<dt>
+								<a href="#" class="b">文艺</a> 
+							</dt>
+							<dd>
+								<a href="#" target="_blank">文学</a> <a href="#" target="_blank">传记</a> <a href="#" target="_blank">艺术</a><a href="#" target="_blank">摄影</a>
+							</dd>
+						</dl><!-- nav-class-item结束 -->
+						<dl class="nav-class-item">
+							<dt>
+								<a href="#" class="b">教育</a> 
+							</dt>
+							<dd>
+								<a href="#" target="_blank">教材</a> <a href="#" target="_blank">外语</a> <a href="#" target="_blank">考试 </a><a href="#" target="_blank">工具书</a>
+							</dd>
+						</dl><!-- nav-class-item结束 -->
+						<dl class="nav-class-item">
+							<dt>
+								<a href="#" class="b">电子书</a>
+							</dt>
+							<dd>
+								<a href="#" target="_blank">网络文学</a> <a href="#" target="_blank">阅览器</a> 
+							</dd>
+						</dl><!-- nav-class-item结束 -->
+						<dl class="nav-class-item">
+							<dt>
+								<a href="#" class="b">经管</a> 
+							</dt>
+							<dd>
+								<a href="#" target="_blank">经济</a> <a href="#" target="_blank">管理</a> <a href="#" target="_blank">投资理财</a>
+							</dd>
+						</dl><!-- nav-class-item结束 -->
+						<dl class="nav-class-item">
+							<dt>
+								<a href="#" class="b">科技</a> 
+							</dt>
+							<dd>
+								<a href="#" target="_blank">科普</a> <a href="#" target="_blank">医学</a> <a href="#" target="_blank">计算机</a> <a href="#" target="_blank">工业</a>
+							</dd>
+						</dl><!-- nav-class-item结束 -->
+					</div><!-- nav-class-show结束 -->
+				</div><!-- nav-class结束 -->
+				<ul class="nav-bar fl">
+					<li><a href="#" target="_blank">网络文学</a></li>
+					<li><a href="#" target="_blank">教辅</a></li>
+					<li><a href="#" target="_blank">小说</a></li>
+					<li><a href="#" target="_blank">青春文学</a></li>
+					<li><a href="#" target="_blank">图书</a></li>
+					<li><a href="#" target="_blank">电子书</a></li>
+					<li><a href="#" target="_blank">历史哲学</a></li>
+				</ul><!-- nav-bar结束 -->
+			</div><!-- commonWidth结束 -->
+		</div><!-- nav结束 -->
+	</div><!-- headerBar结束 -->
+	<div class="banner commonWidth clearfix">
+		<div class="banner-bar banner-big">
+			<ul class="banner-bar-pic">
+				<li><a href="#"><img src="images/banner/banner-01.png" alt="banner-01"></a></li>
+				<li><a href="#"><img src="images/banner/banner-02.png" alt="banner-02"></a></li>
+			</ul><!-- banner-bar-pic结束 -->
+			<div class="banner-bar-pic-control">
+				<a href="#" class="active"></a>
+				<a href="#"></a>
+			</div>
+		</div><!-- banner-bar结束 -->
+	</div><!-- banner结束 -->
+	<div class="shop-title commonWidth">
+		<span class="shop-title-icon"></span>
+		<h3>新书上架</h3>
+		<a href="#" class="more">更多&gt;&gt;</a>
+	</div><!-- shop-title结束 -->
+	<div class="shop-list commonWidth clearfix">
+		<div class="left-area">
+			<div class="banner-bar banner-small">
+				<ul class="banner-bar-pic">
+					<li><a href="item-01.html"><img src="images/banner/人间知味.jpg" alt="人间知味"></a></li>	
+				</ul><!-- banner-bar-pic结束 -->
+			</div><!-- banner-bar结束 -->
+		</div><!-- left-area结束 -->
+		<div class="right-area">
+			<div class="shop-list-top clearfix">
+				<div class="shop-item">
+					<div class="shop-item-pic">
+						<a  href="item-02.html" target="_blank"><img src="images/item/单反摄影.jpg" alt="蜂鸟摄影学院单反摄影从入门到精通 蜂鸟微课堂实战教学版 摄影书籍 结合在线课程 提升摄影书籍 零基础学数码单反摄影" /></a>
+					</div><!-- shop-item-pic结束 -->
+					<h3>蜂鸟摄影学院</h3>
+					<p>78.00元</p>
+				</div><!-- shop-item结束 -->
+				<div class="shop-item">
+					<div class="shop-item-pic">
+						<a href="#" target="_blank"><img src="images/item/艺术.jpg" alt="艺术：让人成为人（第10版）" /></a>
+					</div><!-- shop-item-pic结束 -->
+					<h3>艺术：让人成为人第10版</h3>
+					<p>103.50元</p>
+				</div><!-- shop-item结束 -->
+				<div class="shop-item">
+					<div class="shop-item-pic">
+						<a href="#" target="_blank"><img src="images/item/白心白匠.jpg" alt="白心白匠" /></a>
+					</div><!-- shop-item-pic结束 -->
+					<h3>白心白匠</h3>
+					<p>64.00元</p>
+				</div><!-- shop-item结束 -->
+				<div class="shop-item">
+					<div class="shop-item-pic">
+						<a href="#" target="_blank"><img src="images/item/余生很长.jpg" alt="余生很长，何必慌张（林熙新书）" /></a>
+					</div><!-- shop-item-pic结束 -->
+					<h3>余生很长，何必慌张</h3>
+					<p>27.50元</p>
+				</div><!-- shop-item结束 -->
+			</div><!-- shop-list-top结束 -->
+			<div class="shop-list-bottom clearfix">
+				<div class="shop-bottom-item fl">
+					<div class="shop-bottom-item-pic fl">
+						<a href="item-03.html" target="_blank"><img src="images/item/阿米巴经营.jpg" alt="阿米巴经营"  style="padding-top:3px" /></a>
+					</div>
+					<div class="shop-bottom-item-txt fl">	
+						<p>阿米巴经营——畅销十周年纪念版</p>
+						<h3><img src="images/icon/rmb.png" />25.70</h3>
+					</div>
+				</div><!-- shop-bottom-item结束 -->
+				<div class="shop-bottom-item fl">
+					<div class="shop-bottom-item-pic fl">
+						<a href="#"><img src="images/item/我喜欢生命本来的样子.jpg" alt="我喜欢生命本来的样子" /></a>
+					</div>
+					<div class="shop-bottom-item-txt fl">	
+						<p>我喜欢生命本来的样子(周国平经典散文作品集)</p>
+						<h3><img src="images/icon/rmb.png" />35.60</h3>
+					</div>
+				</div><!-- shop-bottom-item结束 -->
+				<div class="shop-bottom-item fl">
+					<div class="shop-bottom-item-pic fl">
+						<a href="#"><img src="images/item/我们三.jpg" alt="我们仨（新版）" /></a>
+					</div>
+					<div class="shop-bottom-item-txt fl">	
+						<p>我们仨（新版）</p>
+						<h3><img src="images/icon/rmb.png" />17.20</h3>
+					</div>
+				</div><!-- shop-bottom-item结束 -->
+				<div class="shop-bottom-item fl">
+					<div class="shop-bottom-item-pic fl">
+						<a href="#"><img src="images/item/孤独是种大自在.jpg" alt="孤独是种大自在"  style="padding-top:5px" /></a>
+					</div>
+					<div class="shop-bottom-item-txt fl">	
+						<p>孤独是种大自在</p>
+						<h3><img src="images/icon/rmb.png" />27.90</h3>
+					</div>
+				</div><!-- shop-bottom-item结束 -->
+			</div><!-- shop-list-bottom结束 -->
+		</div><!-- right-area结束 -->
+	</div><!-- 第一个shop-list结束 -->
+	<!-- 第二个shop-list -->
+	<div class="shop-title commonWidth">
+		<span class="shop-title-icon"></span>
+		<h3>推荐
+		书籍</h3>
+		<a href="#" class="more">更多&gt;&gt;</a>
+	</div><!-- shop-title结束 -->
+	<div class="shop-list commonWidth clearfix">
+		<div class="left-area">
+			<div class="banner-bar banner-small">
+				<ul class="banner-bar-pic">
+					<li><a href="item-04.html"><img src="images/banner/动物农场.jpg" alt="动物农场"></a></li>	
+				</ul><!-- banner-bar-pic结束 -->
+			</div><!-- banner-bar结束 -->
+		</div><!-- left-area结束 -->
+		<div class="right-area">
+			<div class="shop-list-top clearfix">
+				<div class="shop-item">
+					<div class="shop-item-pic">
+						<a href="item-05.html"><img src="images/item/房思琪的初恋乐园.jpg" alt="房思琪的初恋乐园" /></a>
+					</div><!-- shop-item-pic结束 -->
+					<h3>房思琪的初恋乐园</h3>
+					<p>27.00元</p>
+				</div><!-- shop-item结束 -->
+				<div class="shop-item">
+					<div class="shop-item-pic">
+						<a href="#"><img src="images/item/世上人万千.jpg" alt="世上人万千，唯你是彩虹" /></a>
+					</div><!-- shop-item-pic结束 -->
+					<h3>世上人万千，唯你是彩虹</h3>
+					<p>17.00元</p>
+				</div><!-- shop-item结束 -->
+				<div class="shop-item">
+					<div class="shop-item-pic">
+						<a href="#"><img src="images/item/阿德勒积极心理学.jpg" alt="阿德勒积极心理学" /></a>
+					</div><!-- shop-item-pic结束 -->
+					<h3>阿德勒积极心理学(共4册)</h3>
+					<p>25.99元</p>
+				</div><!-- shop-item结束 -->
+				<div class="shop-item">
+					<div class="shop-item-pic">
+						<a href="#"><img src="images/item/自由与爱之地.jpg" alt="自由与爱之地：入以色列记" /></a>
+					</div><!-- shop-item-pic结束 -->
+					<h3>自由与爱之地：入以色列记</h3>
+					<p>36.70元</p>
+				</div><!-- shop-item结束 -->
+			</div><!-- shop-list-top结束 -->
+			<div class="shop-list-bottom clearfix">
+				<div class="shop-bottom-item fl">
+					<div class="shop-bottom-item-pic fl">
+						<a href="item-06.html"><img src="images/item/自控力.jpg" alt="自控力（新版）" /></a>
+					</div>
+					<div class="shop-bottom-item-txt fl">	
+						<p>自控力（新版）</p>
+						<h3><img src="images/icon/rmb.png" />24.80</h3>
+					</div>
+				</div><!-- shop-bottom-item结束 -->
+				<div class="shop-bottom-item fl">
+					<div class="shop-bottom-item-pic fl">
+						<a href="#"><img src="images/item/游戏力.jpg" alt="游戏力(套装共2册)(电子书)" /></a>
+					</div>
+					<div class="shop-bottom-item-txt fl">	
+						<p>游戏力(套装共2册)</p>
+						<h3><img src="images/icon/rmb.png" />56.50</h3>
+					</div>
+				</div><!-- shop-bottom-item结束 -->
+				<div class="shop-bottom-item fl">
+					<div class="shop-bottom-item-pic fl">
+						<a href="#"><img src="images/item/浮生六记.jpg" alt="浮生六记（作家榜经典）(电子书)" /></a>
+					</div>
+					<div class="shop-bottom-item-txt fl">	
+						<p>浮生六记（作家榜经典）</p>
+						<h3><img src="images/icon/rmb.png" />21.60</h3>
+					</div>
+				</div><!-- shop-bottom-item结束 -->
+				<div class="shop-bottom-item fl">
+					<div class="shop-bottom-item-pic fl">
+						<a href="#"><img src="images/item/度过叛逆期.jpg" alt="陪孩子度过7～9岁叛逆期(电子书)" /></a>
+					</div>
+					<div class="shop-bottom-item-txt fl">	
+						<p>陪孩子度过7～9岁叛逆期</p>
+						<h3><img src="images/icon/rmb.png" />23.00</h3>
+					</div>
+				</div><!-- shop-bottom-item结束 -->
+			</div><!-- shop-list-bottom结束 -->
+		</div><!-- right-area结束 -->
+	</div><!-- 第二个shop-list结束 -->
+	<div style="height:25px"></div><!-- 这个div是为了撑开高度的，没有什么语意，不好！ -->
+	<div class="footer">
+		<P>
+			<a href="#">博学简介</a><i>|</i>
+			<a href="#">博学公告</a><i>|</i>
+			<a href="#">招纳贤士</a><i>|</i>
+			<a href="#">联系我们</a><i>|</i>客服热线：400-123-1234
+		</P>
+		<p>Copyright © 2017 - 2018 博学版权所有&nbsp;&nbsp;&nbsp;京ICP备09037834号&nbsp;&nbsp;&nbsp;京ICP证B1034-8373&nbsp;&nbsp;&nbsp;某市某公安局备案编号：10086580</p>
+		<p class="footer-logo">
+			<a href="#"><img src="images/footer-logo.png" alt="logo" /></a>
+			<a href="#"><img src="images/footer-logo.png" alt="logo" /></a>
+			<a href="#"><img src="images/footer-logo.png" alt="logo" /></a>
+			<a href="#"><img src="images/footer-logo.png" alt="logo" /></a>
+		</p>
+	</div><!-- footer结束 -->
+</body>
+</html>

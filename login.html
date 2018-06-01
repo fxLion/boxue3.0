@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户登录</title>
+	<link rel="stylesheet" type="text/css" href="styles/reset.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<script type="text/javascript" src="js/boxue.js"></script>
+	<!-- 让IE6支持透明 -->
+	<!--[if IE 6]>
+	<script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+	<script type="text/javascript" src="js/ie6Fixpng.js"></script>
+	<![endif]-->
+</head>
+<body >
+	<div class="headerBar">
+		<div class="logo login-logo">
+			<div class="commonWidth">
+				<div class="logo-pic fl">
+					<a href="index.html"><img src="images/logo.png" alt="博学网"></a>
+				</div><!-- logoPic结束 -->
+				<div class="welcome">欢迎登录</div>
+			</div><!-- commonWidth结束 -->
+		</div><!-- logo结束 -->
+	</div><!-- headerBar结束 -->
+
+	<div class="login-box">
+		<div class="login-cont">
+			<form action="login.jsp" method="post"><ul class="login-list">
+				<li class="login-input-title">邮箱/用户名/手机号</li>
+				<li><input type="text" name="username" value="" placeholder="10086580@qq.com" class="login-input bg-email"></li>
+				<li class="login-input-title">密码</li>
+				<li><input type="password" name="pwd" value="" placeholder="请输入密码" class="login-input bg-password"></li>
+				<li><input type="checkbox" name="" value="" id="a1" class="auto-login"><label for="a1">自动登录</label><a href="#" class="f-password">忘记密码？</a></li>
+				<li><input type="submit" name="" value="登 录" class="login-btn"></li>
+			</ul>
+		</form>
+			<!-- <div class="login-partners clearfix">
+				<p class="login-input-title">使用合作方账号登录网站</p>
+				<ul class="login_list">
+					<li><a href="#">QQ</a></li>
+					<li><span>|</span></li>
+					<li><a href="#">网易</a></li>
+					<li><span>|</span></li>
+					<li><a href="#">新浪微博</a></li>
+					<li><span>|</span></li>
+					<li><a href="#">人人网</a></li>
+					<li><span>|</span></li>
+				</ul>
+			</div> -->
+		</div><!-- login-cont结束 -->
+		<a href="signIn.html" class="login-free-btn">免费注册&gt;&gt;</a>
+	</div><!-- login-box结束 -->
+
+	<div style="height:25px"></div>
+	<!-- 这个div是为了撑开高度的，没有什么语意，不好！ -->
+	<div class="footer">
+		<P>
+			<a href="#">博学简介</a><i>|</i>
+			<a href="#">博学公告</a><i>|</i>
+			<a href="#">招纳贤士</a><i>|</i>
+			<a href="#">联系我们</a><i>|</i>客服热线：400-675-1234
+		</P>
+		<p>Copyright © 2017 - 2018 博学版权所有&nbsp;&nbsp;&nbsp;京ICP备09037834号&nbsp;&nbsp;&nbsp;京ICP证B1034-8373&nbsp;&nbsp;&nbsp;某市某公安局备案编号：10086580</p>
+		<p class="footer-logo">
+			<a href="#"><img src="images/footer-logo.png" alt="logo" /></a>
+			<a href="#"><img src="images/footer-logo.png" alt="logo" /></a>
+			<a href="#"><img src="images/footer-logo.png" alt="logo" /></a>
+			<a href="#"><img src="images/footer-logo.png" alt="logo" /></a>
+		</p>
+	</div><!-- footer结束 -->
+</body>
+</html>
